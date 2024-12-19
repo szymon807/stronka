@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c0b9b9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333333;
+    margin: 0;
+}
+
+.photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Domyślnie 3 kolumny na większych ekranach */
+    gap: 20px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%; /* Zachowanie proporcji zdjęcia */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #555555;
+}
+
+footer a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media query dla telefonów */
+@media (max-width: 767px) {
+    .photos {
+        grid-template-columns: repeat(2, 1fr); /* 2 kolumny na telefonach */
+    }
+}

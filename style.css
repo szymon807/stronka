@@ -1,0 +1,100 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ebbbbb;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 80%; /* Ustawiamy szerokość kontenera na 80% szerokości ekranu */
+    max-width: 800px; /* Maksymalna szerokość kontenera */
+    height: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333333;
+}
+
+
+.message {
+    text-align: justify;
+    font-size: 1.1em;
+    color: #555555;
+    line-height: 1.6;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsywność dla różnych urządzeń */
+
+@media (max-width: 768px) {
+    /* Styl dla tabletów i większych telefonów */
+    .container {
+        width: 90%; /* Zwiększamy szerokość kontenera na urządzeniach mobilnych */
+    }
+
+    h1 {
+        font-size: 2em; /* Zmniejszamy rozmiar czcionki nagłówka na mniejszych ekranach */
+    }
+
+    .message {
+        font-size: 1.2em; /* Ustawiamy większy font dla lepszej czytelności na telefonach */
+    }
+
+    footer {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Styl dla małych telefonów */
+    .container {
+        width: 95%; /* Zwiększamy szerokość kontenera na najmniejszych ekranach */
+    }
+
+    h1 {
+        font-size: 1.7em; /* Zmniejszamy czcionkę jeszcze bardziej */
+    }
+
+    .message {
+        font-size: 1.1em; /* Mniejsza czcionka na bardzo małych ekranach */
+    }
+}
+
+
+.photo img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
